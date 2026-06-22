@@ -1,4 +1,4 @@
-# message-broker-8df724
+# message-broker-5c8fa2
 
 A Go message-broker utility.
 
