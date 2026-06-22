@@ -1,3 +1,3 @@
-module message_broker_d1a123
+module message_broker_16beb0
 
 go 1.23

